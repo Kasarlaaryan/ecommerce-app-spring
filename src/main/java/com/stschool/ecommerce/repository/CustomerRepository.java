@@ -12,20 +12,17 @@ import java.util.Optional;
 @Repository
 public class CustomerRepository {
 
-
-    /*
-     CRUD operations on Customers
-     */
-
-        private final List<Customer> customers;
+   // CRUD operations on Customers
 
 
-        public CustomerRepository()  {
-            this.customers = new ArrayList<>();
-        }
+    private final List<Customer> customers;
 
 
-        // ✅ CREATE
+    public CustomerRepository()  {
+        this.customers = new ArrayList<>();
+    }
+
+    // ✅ CREATE
     public Customer save(Customer customer) {
         customers.add(customer);
         return customer;
@@ -58,8 +55,7 @@ public class CustomerRepository {
                     .gender(updatedCustomer.getGender())
                     .status(updatedCustomer.getStatus())
                     .membership(updatedCustomer.getMembership())
-                    .residentialAddress(updatedCustomer.getResidentialAddress())
-                    .shippingAddress(updatedCustomer.getShippingAddress())
+                    .addresses(updatedCustomer.getAddresses())
                     .lastLoggedIn(updatedCustomer.getLastLoggedIn())
                     .createdOn(c.getCreatedOn()) //preserve createdOn
                     .lastLoggedIn(c.getLastLoggedIn())
