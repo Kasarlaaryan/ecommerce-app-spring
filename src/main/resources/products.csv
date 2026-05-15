@@ -1,0 +1,11 @@
+id,name,max_Retail_price,discount_percentage,rating,is_available,company,category,manufactured_year
+1,iPhone 15,79999,10.5,5,true,Apple,Mobile,2025
+2,Samsung Galaxy S24,69999,12.0,4,true,Samsung,Mobile,2025
+3,OnePlus 12,59999,15.0,4,true,OnePlus,Mobile,2024
+4,HP Pavilion Laptop,85000,18.5,5,true,HP,Laptop,2023
+5,Dell Inspiron,72000,20.0,4,false,Dell,Laptop,2022
+6,Boat Rockerz 450,1999,25.0,4,true,Boat,Headphones,2024
+7,Sony Bravia TV,125000,8.0,5,true,Sony,Television,2025
+8,LG Refrigerator,55000,14.0,4,true,LG,Appliances,2023
+9,Canon EOS 1500D,48000,10.0,5,true,Canon,Camera,2022
+10,Realme Narzo 70,18999,22.5,4,true,Realme,Mobile,2025

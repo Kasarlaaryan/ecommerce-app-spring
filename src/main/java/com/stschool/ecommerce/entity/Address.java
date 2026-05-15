@@ -1,5 +1,6 @@
-package com.stschool.ecommerce.model;
+package com.stschool.ecommerce.entity;
 
+import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,6 +10,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Embeddable
 
 public class Address {
     private String houseNo;

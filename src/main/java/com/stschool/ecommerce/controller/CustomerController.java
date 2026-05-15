@@ -1,5 +1,5 @@
 package com.stschool.ecommerce.controller;
-import com.stschool.ecommerce.model.Customer;
+import com.stschool.ecommerce.entity.Customer;
 import com.stschool.ecommerce.service.CustomerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

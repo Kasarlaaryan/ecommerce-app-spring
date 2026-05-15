@@ -2,7 +2,7 @@ package com.stschool.ecommerce.service;
 
 import com.stschool.ecommerce.exceptions.ProductExistsException;
 import com.stschool.ecommerce.exceptions.ProductNotFoundException;
-import com.stschool.ecommerce.model.Product;
+import com.stschool.ecommerce.entity.Product;
 import com.stschool.ecommerce.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 
@@ -47,13 +47,13 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product update(int id, Product product) throws ProductNotFoundException {
         productRepository.findById(id).orElseThrow(() -> new ProductNotFoundException("Product Not found with id: " + id));
-        return productRepository.update(id, product);
+        return productRepository.save(product);
     }
 
     @Override
     public void delete(int id) {
-        productRepository.findById(id).orElseThrow(() -> new ProductNotFoundException("Product Not found with id: " + id));
-        productRepository.delete(id);
+        productRepository.delete(productRepository.findById(id).orElseThrow(() -> new ProductNotFoundException("Product Not found with id: " + id)));
+
     }
 
     @Override

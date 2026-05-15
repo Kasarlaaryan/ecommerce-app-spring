@@ -1,6 +1,6 @@
 package com.stschool.ecommerce.controller;
 import com.stschool.ecommerce.exceptions.BadRequestException;
-import com.stschool.ecommerce.model.Product;
+import com.stschool.ecommerce.entity.Product;
 import com.stschool.ecommerce.service.ProductService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +24,7 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getById(@PathVariable int id) {
+    public ResponseEntity<?> getByName(@PathVariable int id) {
         return ResponseEntity.ok(productService.getById(id));
     }
 

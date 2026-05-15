@@ -2,7 +2,7 @@ package com.stschool.ecommerce.service;
 
 import com.stschool.ecommerce.exceptions.ProductExistsException;
 import com.stschool.ecommerce.exceptions.ProductNotFoundException;
-import com.stschool.ecommerce.model.Product;
+import com.stschool.ecommerce.entity.Product;
 
 import java.util.List;
 import java.util.Map;

@@ -4,7 +4,7 @@ import com.stschool.ecommerce.enums.Membership;
 import com.stschool.ecommerce.enums.Status;
 import com.stschool.ecommerce.exceptions.CustomerExistsException;
 import com.stschool.ecommerce.exceptions.CustomerNotFoundException;
-import com.stschool.ecommerce.model.Customer;
+import com.stschool.ecommerce.entity.Customer;
 import com.stschool.ecommerce.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
